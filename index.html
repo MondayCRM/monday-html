@@ -1,0 +1,198 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link href="bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="bootstrap-fix.css" rel="stylesheet" type="text/css" />
+	<link href="timeline.css" rel="stylesheet" type="text/css" />
+	<link href="font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="main.css" rel="stylesheet" type="text/css" />
+	
+	<title>MondayCRM</title>
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-sm-3 col-md-2 sidebar hidden-xs">
+				<div class="text-center gravatar">
+					<img class="img-circle" src="http://www.gravatar.com/avatar/d7a231c065d77c7a087fad0f039df5c6?size=120&amp;default=mm&amp;r=g">
+					<strong>Branislav Vaculčiak</strong>
+				</div>
+
+				<hr />
+				<ul class="nav nav-sidebar">
+					<li><a href=""><span class="fa fa-dashboard"></span> Dashboard</a></li>
+				</ul>
+				<hr />
+				<h4>CRM</h4>
+				<ul class="nav nav-sidebar">
+					<li class="active"><a href=""><span class="fa fa-user"></span> Persons</a></li>
+					<li><a href=""><span class="fa fa-user-secret"></span> Companies</a></li>
+					<li><a href=""><span class="fa fa-bullseye"></span> Opportunities</a></li>
+				</ul>
+				<hr />
+				<h4>Mailchimp</h4>
+				<ul class="nav nav-sidebar">
+					<li><a href=""><span class="fa fa-send"></span> Campaigns</a></li>
+					<li><a href=""><span class="fa fa-group"></span> Groups</a></li>
+					<li><a href=""><span class="fa fa-paint-brush"></span> Tempates</a></li>
+					<li><a href=""><span class="fa fa-bar-chart"></span> Reports</a></li>
+				</ul>
+				<hr />
+				<ul class="nav nav-sidebar">
+					<li><a href=""><span class="fa fa-power-off"></span> Logout</a></li>
+				</ul>
+			</div>
+
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<div class="top-menu">
+					<label class="glyphicon glyphicon-search" for="search"></label>
+					<input type="text" name="q" id="search" placeholder="Search in clients" />
+					<a href="#" class="add-new-project"><span class="glyphicon glyphicon-plus"></span></a>
+				</div>
+
+				<form class="content content-contact form-horizontal" id="frm-form" method="post" action="/ip-crm/public/contact/add?do=form-submit">
+		
+				<div class="row">
+					<div class="col-sm-6">
+
+						<fieldset>
+							<legend>Spoločnosť</legend>
+							<div class="controls">
+								<div class="col-sm-7 form-pair">
+									<label>Názov</label>
+									<input type="text" class="form-control" name="name" value="DataSpot s.r.o.">
+								</div>
+								<div class="col-sm-5 form-pair">
+									<label>IČO</label>
+									<input type="text" class="form-control" name="comId" value="45870974">
+								</div>
+								<div class="col-sm-6 form-pair">
+									<label>DIČ</label>
+									<input type="text" class="form-control" name="taxId" value="20287542145">
+								</div>
+								<div class="col-sm-6 form-pair">
+									<label>IČ DPH</label>
+									<input type="text" class="form-control" name="vatId" value="">
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Adresa</legend>
+							<div class="controls">
+								<div class="col-sm-12 form-pair">
+									<label>Ulica</label>
+									<input type="text" id="frm-street" class="form-control" name="street" value="Kapitulská 12">
+								</div>
+								<div class="col-sm-4 form-pair">
+									<label>PSČ</label>
+									<input type="text" id="frm-zip" class="form-control" name="zip" value="97401">
+								</div>
+								<div class="col-sm-8 form-pair">
+									<label>Mesto</label>
+									<input type="text" id="frm-city" class="form-control" name="city" value="Banská Bystrica">
+								</div>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Kontakt</legend>
+							<div class="controls">
+								<div class="col-sm-3 form-pair">
+									<label>Titul</label>
+									<input type="text" id="frm-title" class="form-control" name="title" value="Ing.">
+								</div>
+								<div class="col-sm-4 form-pair">
+									<label>Meno</label>
+									<input type="text" id="frm-firstName" class="form-control" name="firstName" value="Branislav">
+								</div>
+								<div class="col-sm-5 form-pair">
+									<label>Priezvisko</label>
+									<input type="text" id="frm-lastName" class="form-control" name="lastName" value="Vaculčiak">
+								</div>
+								<div class="col-sm-6 form-pair">
+									<label>Telefón</label>
+									<input type="text" id="frm-phone" class="form-control" name="phone" value="0909 657 987">
+								</div>
+								<div class="col-sm-6 form-pair">
+									<label>Email</label>
+									<input type="text" id="frm-email" class="form-control" name="email" value="vaculciak@dataspot.sk">
+								</div>
+								<div class="col-sm-12 form-pair">
+									<label>Popis</label>
+									<textarea id="frm-description" class="form-control" name="description"></textarea>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					<div class="col-sm-6">
+
+<section id="cd-timeline">
+	<div class="cd-timeline-start">
+		<span class="cd-timeline-title">
+			Today
+		</span>
+	</div>
+
+	<div class="cd-timeline-block">
+		<img class="cd-timeline-point" src="http://www.gravatar.com/avatar/767fc9c115a1b989744c755db47feb60?size=120&amp;default=mm&amp;r=g">
+		<div class="cd-timeline-content">
+			<h2>Telemarketingová kampaň</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic</p>
+			<span class="cd-date"><span class="glyphicon glyphicon-earphone"></span>Fed 10</span>
+		</div>
+	</div>
+ 
+ 	<div class="cd-timeline-block">
+		<img class="cd-timeline-point" src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?f=y&amp;size=120&amp;default=mm&amp;r=g">
+		<div class="cd-timeline-content">
+			<h2>Registrácia FREE účtu</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic</p>
+			<span class="cd-date"><span class="glyphicon glyphicon-link"></span>Jan 20</span>
+		</div>
+	</div>
+
+	<div class="cd-timeline-block">
+		<img class="cd-timeline-point" src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?size=120&amp;default=mm&amp;r=g">
+		<div class="cd-timeline-content">
+			<h2>Emailová kampaň</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic</p>
+			<span class="cd-date"><span class="glyphicon glyphicon-envelope"></span>Jan 20</span>
+		</div>
+	</div>
+
+	<div class="cd-timeline-block">
+		<img class="cd-timeline-point" src="http://www.gravatar.com/avatar/767fc9c115a1b989744c755db47feb60?size=120&amp;default=mm&amp;r=g">
+		<div class="cd-timeline-content">
+			<h2>Úprava záznamu</h2>
+			<span class="cd-date"><span class="glyphicon glyphicon-pencil"></span>Jan 15</span>
+		</div>
+	</div>
+
+	<div class="cd-timeline-block">
+		<img class="cd-timeline-point" src="http://www.gravatar.com/avatar/d7a231c065d77c7a087fad0f039df5c6?size=120&amp;default=mm&amp;r=g">
+		<div class="cd-timeline-content">
+			<h2>Vytvorenie záznamu</h2>
+			<span class="cd-date"><span class="glyphicon glyphicon-plus"></span>Jan 14</span>
+		</div>
+	</div>
+</section>
+
+					</div>
+					<!--
+					<div class="col-sm-12 text-center">
+						<input type="submit" value="Uložiť" id="frm-form-save" class="btn btn-primary" name="save">
+					</div>
+				-->
+				</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+.main {
+	
+}
+
+/*
+form .row {
+	margin-right: 0px;
+}
+
+form .row [class^="col"] {
+	padding-right: 0px;
+}
+*/
+
+fieldset {
+	margin: 0px;
+}
+fieldset legend {
+	color: #535353;
+	border: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10pt;
+	margin: 20px 0px 10px 0px;
+	letter-spacing: 1px;
+}
+fieldset .controls {
+	border-bottom: 1px solid #eee;
+	border-right: 1px solid #eee;
+	position: relative;
+	overflow: hidden;
+}
+fieldset .form-pair {
+	background-color: #fff;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+    padding: 6px 8px;
+}
+.form-pair label {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #999;
+	font-weight: normal;
+	margin-bottom: 0px;
+	margin-top: 2px;
+	letter-spacing: 1px;
+}
+.form-pair .form-control {
+	border: 0px;
+	border-radius: 0px;
+	box-shadow: none;
+	padding: 0px;
+	margin: 0px;
+	font-weight: normal;
+	font-size: 16px;
+	height: 26px;
+}
+.form-pair! > .form-control:focus {
+	background-color: red;
+}
+
+/*
+label {
+	
+}
+
+.form-pair .form-control {
+	border-radius: 3px;
+	box-shadow: none;
+}
+*/
+
+.c0 {
+	color: black !important;
+}
+.c1 {
+	color: #00597f !important;
+}
+.c2 {
+	color: #2b99c1 !important;
+}
+.c3 {
+	color: #03864c !important;
+}
+.c4, .green {
+	color: #89ad0f !important;
+}
+.c5 {
+	color: #f3c250 !important;
+}
+.c6 {
+	color: #f09e00 !important;
+}
+.c7, .red {
+	color: #df4a64 !important;
+}
+.c8 {
+	color: #a93044 !important;
+}
+.c9 {
+	color: #a03a98 !important;
+}
+.c10 {
+	color: #5d2b7e !important;
+}
+.color-bg0 {
+	background-color: black !important;
+}
+.color-bg1 {
+	background-color: #00597f !important;
+}
+.color-bg2 {
+	background-color: #2b99c1 !important;
+}
+.color-bg3 {
+	background-color: #03864c !important;
+}
+.color-bg4 {
+	background-color: #89ad0f !important;
+}
+.color-bg5 {
+	background-color: #f3c250 !important;
+}
+.color-bg6 {
+	background-color: #f09e00 !important;
+}
+.color-bg7 {
+	background-color: #df4a64 !important;
+}
+.color-bg8 {
+	background-color: #a93044 !important;
+}
+.color-bg9 {
+	background-color: #a03a98 !important;
+}
+.color-bg10 {
+	background-color: #5d2b7e !important;
+}
+.color-point {
+	display: inline-block;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	margin-right: 3px;
+}
+
+
+.row .in {
+	padding-right: 0px;
+}
+.row .out {
+	padding-left: 15px;
+	padding-right: 15px;
+}
